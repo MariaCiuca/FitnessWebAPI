@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace FitnessWebAPI.Entities
 {
@@ -15,11 +12,11 @@ namespace FitnessWebAPI.Entities
         [Required]
         public Guid ValabilityID { get; set; }
 
-        [ForeignKey("ValabilityId")]
+        [ForeignKey("ValabilityID")]
         public virtual Valability Valability { get; set; }
 
         public bool? Deleted { get; set; }
     }
 
-   
+
 }
